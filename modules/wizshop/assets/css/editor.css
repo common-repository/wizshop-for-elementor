@@ -1,0 +1,17 @@
+/* Widgets Icon */
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?71877614');
+    src: url('../fonts/fontello.eot?71877614#iefix') format('embedded-opentype'),
+    url('../fonts/fontello.woff2?71877614') format('woff2'),
+    url('../fonts/fontello.woff?71877614') format('woff'),
+    url('../fonts/fontello.ttf?71877614') format('truetype'),
+    url('../fonts/fontello.svg?71877614#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.eicon-wizshop:before {
+    content: "\e800";
+    font-family: "fontello";
+} /* '' */

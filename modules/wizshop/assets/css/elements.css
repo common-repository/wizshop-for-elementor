@@ -1,0 +1,174 @@
+.data-wiz-product-container {
+    width: 100%;
+}
+
+/* Single Product | Image */
+.wizshop-product-image {
+    position: relative;
+}
+
+.wizshop-product-image .sale-badge {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    min-width: 65px;
+    min-height: 65px;
+    background: #23a535;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 65px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.wizshop-product-image .sale-badge.wizshop-align-icon-right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.wizshop-product-image .sale-badge.wizshop-align-icon-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.elementor-align-icon-right span {
+    margin-left: 10px;
+}
+
+.elementor-align-icon-left span {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* Wizshop tables */
+.wiz-table {
+    /*border: 1px solid #000000;*/
+    width: 100%;
+}
+
+.wiz-table-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wiz-table-head .wiz-table-row,
+.wiz-table-item:not(:last-child) .wiz-table-row {
+    /*border-bottom: 1px solid #000000;*/
+}
+
+.wiz-table-cell {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    flex: 1;
+}
+
+.wiz-table-cell:not(:last-child) {
+    /*border-left: 1px solid #000000;*/
+}
+
+.table-cell-mobile-title {
+    display: none;
+}
+
+.wiz-table-cell .qty {
+    max-width: 50px;
+}
+
+/* Wizshop Product Properties */
+.properties-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.property-item {
+    display: flex;
+    background: #dddddd;
+}
+
+.property-item:not(:last-child) {
+    border-bottom: 2px solid #000000;
+}
+
+.property-title {
+    background: #9e9e9e61;
+}
+
+.property-content {
+    flex: 1;
+}
+
+.property-title,
+.property-content {
+    padding: 5px;
+}
+
+.add-to-cart-row {
+    display: flex;
+    align-items: center;
+}
+
+/* Mini Cart */
+.wizshop-mini-cart-inner {
+    position: relative;
+    display: none;
+}
+
+.wizshop-mini-cart-container {
+    position: absolute;
+    z-index: 2;
+}
+
+.wizshop-mini-cart:hover .wizshop-mini-cart-inner {
+    display: block;
+}
+
+.wizshop-mini-cart .elementor-menu-cart__footer-buttons .elementor-button {
+    border-style: solid;
+}
+
+.wizshop-mini-cart .wiz-table-cell {
+    justify-content: flex-start;
+    text-align: initial !important;
+    flex: initial;
+}
+
+.wizshop-mini-cart .wiz-table-cell:nth-child(2) {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .wiz-table.wiz-table-responsive .wiz-table-item .wiz-table-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wiz-table.wiz-table-responsive .wiz-table-item .wiz-table-row .wiz-table-cell {
+        border-left: 0;
+        border-right: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .wiz-table-cell {
+        border-bottom: 1px solid #000000;
+    }
+
+    .wiz-table:not(.wizshop-mini-cart-inner) .wiz-table-item:last-child .wiz-table-cell:last-child {
+        border-bottom: 0;
+    }
+
+    .table-cell-mobile-title {
+        display: inline-block;
+        white-space: pre;
+        padding: 0 5px;
+    }
+
+    .wiz-table.wiz-table-responsive .wiz-table-head {
+        display: none;
+    }
+}
